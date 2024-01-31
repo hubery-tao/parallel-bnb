@@ -1,0 +1,9 @@
+# ignore builds
+/Debug
+!/Debug/build.sh
+
+/Release
+!/Release/build.sh
+
+# ignore .vscode
+/.vscode

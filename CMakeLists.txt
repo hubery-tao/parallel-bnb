@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.18)
 
-project(PBAB)
+project(PBNB)
 
-add_executable(mkl_test mkl_test.c mkl_wrap.c)
+add_executable(mkl_test mkl_test.cpp mkl_wrap.hpp mkl_wrap.cpp)
 
-set(C_STANDARD 11)
-set(CMAKE_C_FLAGS_DEBUG "-g -Wall -DDEBUG")
-set(CMAKE_C_FLAGS_RELEASE "-O3 -ffast-math -DNDEBUG")
+set(CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS_DEBUG "-g -Wall -DDEBUG")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -ffast-math -DNDEBUG")
 
 
 set(BLA_VENDOR Intel10_64lp)
